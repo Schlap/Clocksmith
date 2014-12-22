@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+</head>
+  <body>
+  <link rel="stylesheet" type="text/css" href="/public/css/stylesheet.css">
+    <section>
+      <p class="title">The Time</p>
+    </section>
+      <section class="date"></section>
+        <script>
+          var socket = io.connect();
+            socket.on('date', function(data){
+              $('.date').text(data.date);
+            });
+        </script>
+  </body>
+</html>
