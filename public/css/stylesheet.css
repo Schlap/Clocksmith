@@ -1,4 +1,7 @@
 .date{
   position: absolute;
-  top: 100%;
+  top: 30%;
+  left: 25%;
+  font-size: 3.5em;
+  color: #A9A9A9;
 }
