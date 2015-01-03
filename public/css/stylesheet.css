@@ -144,9 +144,9 @@ body {
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
   z-index: -1;
-  -moz-box-shadow: 0 0 3px gray;
+  /*-moz-box-shadow: 0 0 3px gray;
   -webkit-box-shadow: 0 0 3px gray;
-  box-shadow: 0 0 3px gray
+  box-shadow: 0 0 3px gray*/
 }
 
 .hand.minute { /* minute hand (2nd longest) */
