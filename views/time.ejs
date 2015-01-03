@@ -44,15 +44,12 @@
         socket.on('time', function(data){
           $('.time').html(data.time);
         });
-
         socket.on('hour', function(data){
           $('.hand.hour').animate({rotate: data.hour})
         });
-
         socket.on('minute', function(data){
           $('.hand.minute').animate({rotate: data.minute})
         });
-
         socket.on('second', function(data){
           $('.hand.second').animate({rotate: data.second})
         });
