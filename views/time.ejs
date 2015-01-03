@@ -3,12 +3,14 @@
 <head>
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-  <script src="/jquery.rotate-0.3.0/jquery.rotate.js"></script>
+  <script src="/js/jquery.rotate-0.3.0/jquery.rotate.js"></script>
   <script src="/js/clockModule.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 </head>
   <body>
+
     <section class="container">
+      <section class="navbar"></section>
       <section class="time"></section>
 
       <!-- clock face -->
@@ -34,14 +36,27 @@
 
     <!-- client-side socket connection/clock face animation -->
     <script>
-      var socket = io.connect();
+        var socket = io.connect();
+
         socket.on('time', function(data){
           $('.time').html(data.time);
         });
 
-        $(document).ready(function(){
-          hourHandRotation();
+        socket.on('hour', function(data){
+          $('.hand.hour').animate({rotate: data.hour})
         });
+
+        socket.on('minute', function(data){
+          $('.hand.minute').animate({rotate: data.minute})
+        });
+
+        socket.on('second', function(data){
+          $('.hand.second').animate({rotate: data.second})
+        });
+
+        // $(document).ready(function(){
+        //   hourHandleRotation();
+        // });
     </script>
   </body>
 </html>

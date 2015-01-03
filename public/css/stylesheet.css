@@ -167,10 +167,13 @@ body {
 }
 
 .footer {
-  max-width: 100%;
+  position:fixed;
+  height:50px;
   background-color: black;
-  position: relative;
-  margin-top: 16%;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  margin-bottom:0px;
 
 }
 
@@ -178,4 +181,9 @@ body {
   color: white;
   text-align: center;
   font-family: "Futura (Light)";
+  font-size: 1.2em;
+}
+
+.navbar {
+
 }
