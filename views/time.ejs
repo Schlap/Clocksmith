@@ -37,24 +37,12 @@
 
     <!-- client-side socket connection/clock face animation -->
     <script>
-
       $(document).ready(function(){
-        var socket = io.connect();
-
-        socket.on('time', function(data){
-          $('.time').html(data.time);
-        });
-        socket.on('hour', function(data){
-          $('.hand.hour').animate({rotate: data.hour})
-        });
-        socket.on('minute', function(data){
-          $('.hand.minute').animate({rotate: data.minute})
-        });
-        socket.on('second', function(data){
-          $('.hand.second').animate({rotate: data.second})
-        });
+        time(socket);
+        hour(socket);
+        minute(socket);
+        second(socket);
       });
-
     </script>
   </body>
 </html>
