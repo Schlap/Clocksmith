@@ -20,7 +20,8 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  background: white;
+  background: #00FF00
+  ;
   box-shadow: inset 0 0 10px gray;
   border: 14px solid black
 }
@@ -95,7 +96,7 @@ body {
   position: relative;
   width: 88%;
   height: 88%;
-  background: white;
+  background: #00FF00;
   -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
@@ -120,11 +121,11 @@ body {
 }
 
 .inner_face::after {
-  content: "QUARTZ";
+  content: "ROLEX";
   position: absolute;
   width: 100%;
-  font: normal 0.8em Arial;
-  color: gray;
+  font: normal 0.8em "Futura (Light)";
+  color: black;
   text-align: center;
   top: 85%
 }
