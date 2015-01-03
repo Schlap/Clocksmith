@@ -12,15 +12,17 @@ app.get('/', function(req, res){
   res.render('time');
 });
 
-http.listen(8001);
+http.listen(process.env.PORT || 8001);
 
-console.log('Listening to port: * 8001');
+console.log('Listening to port: 8001');
 
-var serv_io = io.listen(http);
+var server_io = io.listen(http);
 console.log('socket connected');
 
-serv_io.sockets.on('connection', function(socket){
+server_io.sockets.on('connection', function(socket){
   setInterval(function(){
-    socket.emit('date', {'date': new Date()});
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    socket.emit('time', {'time': time });
   }, 1000);
 });

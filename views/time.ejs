@@ -6,14 +6,12 @@
 </head>
   <body>
   <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <!-- <section>
-      <p class="title">The Time</p>
-    </section> -->
-      <section class="date"></section>
+    <section><h1></h1>
+      <section class="time"></section>
         <script>
           var socket = io.connect();
-            socket.on('date', function(data){
-              $('.date').html(data.date);
+            socket.on('time', function(data){
+              $('.time').html(data.time);
             });
         </script>
   </body>
