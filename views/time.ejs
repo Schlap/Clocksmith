@@ -3,16 +3,45 @@
 <head>
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script src="/jquery.rotate-0.3.0/jquery.rotate.js"></script>
+  <script src="/js/clockModule.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
 </head>
   <body>
-  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <section><h1></h1>
+    <section class="container">
       <section class="time"></section>
-        <script>
-          var socket = io.connect();
-            socket.on('time', function(data){
-              $('.time').html(data.time);
-            });
-        </script>
+
+      <!-- clock face -->
+      <section class="outer_face">
+        <section class="marker oneseven"></section>
+        <section class="marker twoeight"></section>
+        <section class="marker fourten"></section>
+        <section class="marker fiveeleven"></section>
+        <section class="inner_face">
+          <section class="hand hour"></section>
+          <section class="hand minute"></section>
+          <section class="hand second"></section>
+        </section>
+      </section>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <section class="description">
+        <p class="tag-line">This clock was designed by Hadi.</p>
+      </section>
+    </section>
+
+    <!-- client-side socket connection/clock face animation -->
+    <script>
+      var socket = io.connect();
+        socket.on('time', function(data){
+          $('.time').html(data.time);
+        });
+
+        $(document).ready(function(){
+          hourHandRotation();
+        });
+    </script>
   </body>
 </html>
