@@ -10,8 +10,12 @@
 </head>
   <body>
     <!-- time display -->
+    <section class="set-time">
+      <p id="set-time-link">Set Time</p>
+    </section>
     <section class="date"></section>
     <section class="time"></section>
+
 
       <section class="container">
       <!-- clock face -->
@@ -42,7 +46,9 @@
         hour(socket);
         minute(socket);
         second(socket);
+        changeClockColour();
       });
+
     </script>
   </body>
 </html>

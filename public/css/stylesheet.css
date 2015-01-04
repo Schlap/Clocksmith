@@ -1,3 +1,7 @@
+/*Globals*/
+
+img{max-width: 100%}
+
 body {
   background-color: #191970;
   max-width: 100%;
@@ -5,7 +9,7 @@ body {
 
 .time{
   position: relative;
-  margin-top: 11%;
+  margin-top: 2%;
   text-align: center;
   font-size: 6.5em;
   font-family: "Architect";
@@ -16,12 +20,12 @@ body {
   position: relative;
   margin: auto;
   padding: 0;
-  top: 30px;
+  top: 20px;
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  background: #800020;
-  border: 14px solid black
+  background: #008B8B;
+  border: 10px solid black
 }
 
 .outer_face::before, .outer_face::after{ /* 12-6 and 9-3 hour markers */
@@ -94,7 +98,7 @@ body {
   position: relative;
   width: 88%;
   height: 88%;
-  background: #800020;
+  background: #008B8B;
   -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
@@ -180,4 +184,28 @@ body {
   text-align: center;
   font-family: "Futura (Light)";
   font-size: 1.2em;
+}
+
+
+.set-time {
+  width: 100px;
+  height: 100px;
+  background: #FFFF00;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: auto;
+  position: relative;
+  margin-top: 4%;
+  border: 4px black solid;
+  cursor: pointer;
+
+}
+
+
+#set-time-link {
+  font-family: "Futura (Light)";
+  text-align: center;
+  margin-top: 42.5px;
+  cursor: pointer;
 }
