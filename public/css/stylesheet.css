@@ -24,7 +24,7 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  background: #008B8B;
+  background: #B22222;
   border: 10px solid black
 }
 
@@ -98,7 +98,7 @@ body {
   position: relative;
   width: 88%;
   height: 88%;
-  background: #008B8B;
+  background: #B22222;
   -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
@@ -191,9 +191,9 @@ body {
   width: 100px;
   height: 100px;
   background: #FFFF00;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   margin: auto;
   position: relative;
   margin-top: 4%;
@@ -203,8 +203,9 @@ body {
 }
 
 
-#set-time-link {
+#set-time-button {
   font-family: "Futura (Light)";
+  font-weight: 600;
   text-align: center;
   margin-top: 42.5px;
   cursor: pointer;
