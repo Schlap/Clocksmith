@@ -23,9 +23,3 @@ function second(socket){
     $('.hand.second').animate({rotate: data.second})
   });
 };
-
-function changeClockColour(){
-  $('.set-time').on('click', function(){
-
-  });
-};
