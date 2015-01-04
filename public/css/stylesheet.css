@@ -20,8 +20,8 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 250px;
-  background: #800020;
-  border: 14px solid black
+  background: #DC143C;
+  border: 10px solid black
 }
 
 .outer_face::before, .outer_face::after{ /* 12-6 and 9-3 hour markers */
@@ -94,7 +94,7 @@ body {
   position: relative;
   width: 88%;
   height: 88%;
-  background: #800020;
+  background: #DC143C;
   -moz-border-radius: 1000px;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
