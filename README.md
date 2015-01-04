@@ -9,4 +9,4 @@ Tools used:
 4). sockets.io
 5). node/express
 
-View it on heroku: https://tick-tock.herokuapp.com/ 
+View it on heroku: https://clocksmith.herokuapp.com/ 
