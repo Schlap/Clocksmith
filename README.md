@@ -4,11 +4,11 @@ Getting the clock hands to move was quite magical. I learnt more about the wonde
 
 Tools used:
 
-* html/css
-* jquery
-* jquery rotate
-* embedded javascript
-* sockets.io
-* node/express
+* Html/css
+* Jquery
+* Jquery rotate
+* EJS
+* Sockets.io
+* Node/express
 
 View it on heroku: https://clocksmith.herokuapp.com/
