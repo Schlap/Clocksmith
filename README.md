@@ -1,12 +1,14 @@
 This is a real-time clock.
 
+Getting the clock hands to move was quite magical. I learnt more about the wonders of jquery animation and web sockets to ping live information back and forth by doing this project.
+
 Tools used:
 
-1). html/css
-2). jquery
-3). jquery rotate
-4). embedded javascript
-4). sockets.io
-5). node/express
+* html/css
+* jquery
+* jquery rotate
+* embedded javascript
+* sockets.io
+* node/express
 
-View it on heroku: https://clocksmith.herokuapp.com/ 
+View it on heroku: https://clocksmith.herokuapp.com/
