@@ -23,3 +23,11 @@ function secondHand(socket){
     $('.hand.second').animate({rotate: data.second})
   });
 };
+
+
+$(document).ready(function(){
+  time(socket);
+  hourHand(socket);
+  minuteHand(socket);
+  secondHand(socket);
+});

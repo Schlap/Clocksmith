@@ -17,7 +17,7 @@ http.listen(process.env.PORT || 8001);
 console.log('Listening to port: 8001');
 
 var server_io = io.listen(http);
-console.log('socket connected');
+
 
 server_io.sockets.on('connection', function(socket){
 
@@ -48,5 +48,5 @@ server_io.sockets.on('connection', function(socket){
 
     socket.emit('second', {'second': second});
   }, 1000);
-
+  console.log('socket connected on: '+ socket.id);
 });
