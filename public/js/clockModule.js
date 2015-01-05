@@ -6,19 +6,19 @@ function time(socket){
   });
 };
 
-function hour(socket){
+function hourHand(socket){
   socket.on('hour', function(data){
     $('.hand.hour').animate({rotate: data.hour})
   });
 };
 
-function minute(socket){
+function minuteHand(socket){
   socket.on('minute', function(data){
     $('.hand.minute').animate({rotate: data.minute})
   });
 };
 
-function second(socket){
+function secondHand(socket){
   socket.on('second', function(data){
     $('.hand.second').animate({rotate: data.second})
   });
