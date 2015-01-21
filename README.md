@@ -6,12 +6,18 @@ Getting the clock hands to move was quite magical. I learnt more about the wonde
 
 ## Tools used:
 
-* Html/css
+* HTML
+* CSS
 * Jquery
 * Jquery rotate
 * EJS
 * Sockets.io
-* Node/express
+* Node
+* Express
+
+## Personal goals:
+
+* Full test coverage
 
 View it on heroku: https://clocksmith.herokuapp.com/
 
